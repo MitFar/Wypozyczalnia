@@ -1,0 +1,54 @@
+CREATE TABLE klient (
+    id_klienta INT(9) NOT NULL AUTO_INCREMENT,
+    imie VARCHAR(255),
+    nazwisko VARCHAR(255),
+    numer_dowodu_nip VARCHAR(255),
+    firma VARCHAR(255),
+    ulica VARCHAR(255),
+    miejscowosc VARCHAR(255),
+    kod_pocztowy VARCHAR(255),
+    miasto VARCHAR(255),
+    numer_tel VARCHAR(255),
+    email VARCHAR(255),
+    kto_wydal VARCHAR(255),
+    uwagi VARCHAR(255),
+    PRIMARY KEY (id_klienta)
+);
+
+CREATE TABLE maszyna (
+    id_maszyny INT AUTO_INCREMENT PRIMARY KEY,
+    typ_maszyny VARCHAR(255),
+    model VARCHAR(255),
+    stan_wyp VARCHAR(255)
+);
+
+CREATE TABLE umowa_najmu (
+    id_umowy INT(9) NOT NULL AUTO_INCREMENT,
+    data_wynajmu DATE,
+    data_zwrotu DATE,
+    klient_id INT(9) NOT NULL,
+    maszyna_id INT NOT NULL,
+    PRIMARY KEY (id_umowy),
+    FOREIGN KEY (klient_id) REFERENCES klient (id_klienta),
+    FOREIGN KEY (maszyna_id) REFERENCES maszyna (id_maszyny)
+);
+
+CREATE TABLE serwis (
+  id_serwisu INT AUTO_INCREMENT PRIMARY KEY,
+  typ_maszyny VARCHAR(255),
+  model_maszyny VARCHAR(255),
+  uwagi VARCHAR(255),
+  id_klienta INT(9) NOT NULL,
+  FOREIGN KEY (id_klienta) REFERENCES klient (id_klienta)
+);
+
+CREATE TABLE umowa_najmu_historia (
+    id_umowy_historia INT(9) NOT NULL AUTO_INCREMENT,
+    data_wynajmu DATE,
+    data_zwrotu DATE,
+    klient_id INT(9) NOT NULL,
+    maszyna_id INT NOT NULL,
+    PRIMARY KEY (id_umowy_historia),
+    FOREIGN KEY (klient_id) REFERENCES klient (id_klienta),
+    FOREIGN KEY (maszyna_id) REFERENCES maszyna (id_maszyny)
+);

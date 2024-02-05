@@ -1,0 +1,157 @@
+nav {
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  }
+  
+  nav a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 1em;
+  transition: color 0.3s ease-in-out;
+  }
+  
+  nav a:hover {
+  color: #555;
+  }
+  
+  nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  }
+  
+  nav ul li {
+  position: relative;
+  }
+  
+  nav ul li a {
+  display: block;
+  padding: 0.5em 1em;
+  }
+  
+  nav ul li:hover > ul {
+  display: block;
+  }
+  
+  nav ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  padding: 0.5em 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  nav ul ul li {
+  display: block;
+  width: 200px;
+  }
+  
+  nav ul ul li a {
+  display: block;
+  padding: 0.25em 1em;
+  }
+  
+  nav ul ul li a:hover {
+  background-color: #f7f7f7;
+  }
+  
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  position: relative;
+  display: inline-block;
+  margin-right: 1em;
+}
+
+nav ul li a {
+  display: block;
+  padding: 0.5em 1em;
+  color: #000;
+  text-decoration: none;
+}
+
+nav ul li:hover > ul {
+  display: block;
+}
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  padding: 0.5em 0;
+  border: 1px solid #ccc;
+}
+
+nav ul ul li {
+  display: block;
+  width: 200px;
+  margin: 0;
+}
+
+nav ul ul li a {
+  display: block;
+  padding: 0.25em 1em;
+  color: #000;
+  text-decoration: none;
+}
+
+nav ul ul li a:hover {
+  background-color: #ccc;
+}
+label {
+display: block;
+margin-bottom: 5px;
+}
+
+select, input[type="date"], input[type="submit"] {
+display: block;
+width: 100%;
+padding: 10px;
+margin-bottom: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+font-size: 16px;
+}
+
+select {
+height: 40px;
+}
+
+input[type="submit"] {
+background-color: #4CAF50;
+color: white;
+cursor: pointer;
+}
+
+input[type="submit"]:hover {
+background-color: #3e8e41;
+}
+
+option {
+font-size: 16px;
+}
+
+option:first-child {
+color: #999;
+}
+
+@media (min-width: 768px) {
+form {
+width: 50%;
+}
+}
