@@ -1,46 +1,4 @@
-<html>
-<head>
-<meta charset="UTF-8">
-    <link href="style_wyswietlanie.css" rel="stylesheet">
-</head>
-<body>
-	<nav>
-  <ul>
-    <li><a href="#">Klienci</a>
-      <ul>
-        <li><a href="klienci.php">Wyświetl rekordy</a></li>
-        <li><a href="dodajklienta.php">Dodaj rekord</a></li>
-		<li><a href="usun.php">Usuń rekord</a></li>
-      </ul>
-    </li>
-    <li><a href="#">Maszyny</a>
-      <ul>
-        <li><a href="maszyny.php">Wyświetl rekordy</a></li>
-        <li><a href="dodaj_maszyne.php">Dodaj rekord</a></li>
-		<li><a href="usun_maszyne.php">Usuń rekord</a></li>
-      </ul>
-    </li>
-    <li><a href="#">Umowy</a>
-      <ul>
-        <li><a href="umowy.php">Wyświetl rekordy</a></li>
-        <li><a href="dodaj_umowe.php">Dodaj rekord</a></li>
-		<li><a href="usun_umowe.php">Usuń rekord</a></li>
-      </ul>
-    </li>
-	<li><a href="umowa_najmu_historia.php">Historia</a></li>
-	<li><a href="#">Serwis</a>
-      <ul>
-        <li><a href="serwis.php">Wyświetl rekordy</a></li>
-        <li><a href="dodaj_serwis.php">Dodaj rekord</a></li>
-		
-      </ul>
-    </li>
-    <li><a href="main.html">Strona główna</a></li>
-  </ul>
-</nav>
-</body>
-</html>
-
+<?php include 'menu.php';?>
 <?php
 include 'polacz_z_baza.php';
 
@@ -89,7 +47,7 @@ mysqli_close($conn);
 		<input type="text" name="numer_tel"><br>
 		<label>Adres e-mail:</label><br>
 		<input type="email" name="email"><br>
-		<label>Kto wydał:</label><br>
+		<label>Kto dodał:</label><br>
 		<input type="text" name="kto_wydal"><br>
 		<label>Uwagi:</label><br>
 		<input type="text" name="uwagi"><br>

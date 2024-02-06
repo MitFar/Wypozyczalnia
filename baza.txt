@@ -39,6 +39,7 @@ CREATE TABLE serwis (
   model_maszyny VARCHAR(255),
   uwagi VARCHAR(255),
   id_klienta INT(9) NOT NULL,
+  data_przyjecia DATE,
   FOREIGN KEY (id_klienta) REFERENCES klient (id_klienta)
 );
 

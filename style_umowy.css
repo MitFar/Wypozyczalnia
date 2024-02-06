@@ -1,0 +1,189 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 20px 0;
+  font-size: 16px;
+  text-align: left;
+}
+
+table th,
+table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+  table {
+    font-size: 14px;
+  }
+  
+  table th,
+  table td {
+    padding: 6px;
+  }
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  position: relative;
+  display: inline-block;
+  margin-right: 1em;
+}
+
+nav ul li a {
+  display: block;
+  padding: 0.5em 1em;
+  color: #000;
+  text-decoration: none;
+}
+
+nav ul li:hover > ul {
+  display: block;
+}
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  padding: 0.5em 0;
+  border: 1px solid #ccc;
+}
+
+nav ul ul li {
+  display: block;
+  width: 200px;
+  margin: 0;
+}
+
+nav ul ul li a {
+  display: block;
+  padding: 0.25em 1em;
+  color: #000;
+  text-decoration: none;
+}
+
+nav ul ul li a:hover {
+  background-color: #ccc;
+}
+h1 {
+  color: navy;
+  font-size: 32px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+table {
+  width: 80vw;
+  max-width: 800px;
+  border-collapse: collapse;
+  margin: 20px auto;
+  box-shadow: 0 0 20px rgba(0,0,0,0.15);
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+  background-color: #f9f9f9;
+}
+
+button[type="submit"] {
+  background-color: #ff7575;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #e74c3c;
+}
+
+.message {
+  color: green;
+  margin: 20px auto;
+  max-width: 600px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+nav {
+background-color: #f7f7f7;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 1em;
+font-family: Arial, sans-serif;
+font-weight: bold;
+}
+
+nav a {
+color: #333;
+text-decoration: none;
+margin: 0 1em;
+transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+color: #555;
+}
+
+nav ul {
+list-style: none;
+margin: 0;
+padding: 0;
+display: flex;
+align-items: center;
+}
+
+nav ul li {
+position: relative;
+}
+
+nav ul li a {
+display: block;
+padding: 0.5em 1em;
+}
+
+nav ul li:hover > ul {
+display: block;
+}
+
+nav ul ul {
+display: none;
+position: absolute;
+top: 100%;
+left: 0;
+background-color: #fff;
+padding: 0.5em 0;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+nav ul ul li {
+display: block;
+width: 200px;
+}
+
+nav ul ul li a {
+display: block;
+padding: 0.25em 1em;
+}
+
+nav ul ul li a:hover {
+background-color: #f7f7f7;
+}
